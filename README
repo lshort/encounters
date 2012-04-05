@@ -1,0 +1,3 @@
+This project builds an SqlLite3 powered webapp that generates random encounters for a DnD game.  Through the webapp interface, the gm can create the encounter tables and creature stats.  
+
+The project is build using the Snap web framework, version 0.8.
