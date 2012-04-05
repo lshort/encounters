@@ -7,29 +7,9 @@ This is where all the routes and handlers are defined for your site. The
 
 -}
 
-
-import           Control.Applicative
-import           Control.Monad
-import           Control.Monad.Trans
-import           Data.Maybe
-import           Data.List
-import           Data.ByteString.Internal
-import qualified Data.Text.Encoding as T
-import qualified Data.Text as DT
-import qualified Text.XmlHtml as X
-import           Snap.Extension.Heist
-import           Snap.Extension.Timer
-import           Snap.Util.FileServe
-import           Snap.Types
-import           Text.Templating.Heist
-import           Debug.Trace
 import           CreatureTables
 import           QueryLite
 import           System.Environment
-
-import           Database.HDBC
-import           Database.HDBC.Sqlite3
-import           Database.HDBC.ColTypes as HDBCCT
 
 buildTableIf :: [String] -> TableDef -> IO()
 buildTableIf args t = 
